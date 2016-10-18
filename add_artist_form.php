@@ -1,13 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: n0195014
- * Date: 10/17/16
- * Time: 3:16 PM
- */
-
-
-
 
 ?>
 
@@ -15,18 +6,36 @@
 
 <html>
 
+<head>
     <title>Add Artist</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
 
-    <form action="add_artist.php" method="POST">
+    <div id="menu">
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="artists.php">Artists</a></li>
+            <li><a href="releases.php">Releases</a></li>
+            <li><a href="contact.php">Contact</a>
+        </ul>
+    </div>
 
-        <label>Artist Name</label>
-        <input name="artistName"><br>
+    <h1>Add Artist</h1>
 
-        <label>Artist Bio</label>
-        <input name="artistBio"><br>
+    <div class="addForm">
 
-        <input type="submit" value="Add Artist"><br>
+        <form action="add_artist.php" method="POST">
 
-    </form>
+            <label>Artist Name</label>
+            <input type="text"name="artistName"><br>
+
+            <label>Artist Bio</label>
+            <input type="text" name="artistBio"><br>
+
+            <input type="submit" value="Add Artist"><br>
+
+        </form>
+
+    </div>
 
 </html>

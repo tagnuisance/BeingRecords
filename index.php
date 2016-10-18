@@ -10,6 +10,8 @@ $releases = get_all_releases();
 <!DOCTYPE html>
 
 <head>
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <title>Being Records - Established 2015</title>
 </head>
@@ -31,14 +33,12 @@ $releases = get_all_releases();
     <div id="releaseDisplay">
         <table>
             <tr>
-                <th>ID</th>
                 <th>Artist</th>
                 <th>Release</th>
                 <th>Year</th>
             </tr>
         <?php foreach ($releases as $release): ?>
         <tr>
-            <td><?php echo $release['releaseID']; ?></td>
             <td><?php echo $release['artistName']; ?></td>
             <td><?php echo $release['releaseName']; ?></td>
             <td><?php echo $release['releaseYear']; ?></td>
