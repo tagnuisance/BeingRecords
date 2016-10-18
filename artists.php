@@ -8,7 +8,7 @@ if (isset($_GET["artistName"])) {
     //If Set - get info for that artist
     $artists = get_artist_by_name($_GET["artistName"]);
 } else
-    //If not set - return all artists
+    //If not set - return all artists - ok?
     $artists = get_all_artists();
 
 ?>
