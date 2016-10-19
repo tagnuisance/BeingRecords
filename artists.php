@@ -45,9 +45,13 @@ if (isset($_GET["artistName"])) {
             </tr>
         <?php endforeach; ?>
     </table>
+    <br>
 </div>
 
-<a href="add_artist_form.php">Add Artist</a>
+<!--@TODO - this should only be available for authenticated users-->
+<h2><a href="add_artist_form.php">Add Artist</a></h2>
+
+
 
 </body>
 

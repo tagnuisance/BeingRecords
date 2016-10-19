@@ -4,10 +4,19 @@ html {
     font-family: 'Helvetica Neue';
 }
 
-/*#releaseDisplay {*/
-    /*padding-right: 30px;*/
-    /*padding-left: 30px;*/
-/*}*/
+.btn-primary {
+    background-color: black;
+}
+
+#artistDisplay {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#releaseDisplay {
+    padding-right: 30px;
+    padding-left: 80px;
+}
 
 h1 { color: #111;
     font-family: 'Helvetica Neue', sans-serif;
@@ -65,7 +74,7 @@ input[type=text], select {
 
 input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -75,7 +84,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: red;
 }
 
 .addForm {

@@ -29,18 +29,16 @@ $releases = get_all_releases();
 
     <h1>Being Records</h1>
 
-    <div class="row">
+    <div class="row" id="releaseDisplay">
         <?php foreach ($releases as $release): ?>
-            <div class="col-md-4">
-                    <div class="thumbnail">
+            <div class="col-md-3 col-sm-4 col-xs-6">
                         <img src="<?php echo $release['imageURL']?>">
                         <div class="caption">
-                            <h3><?php echo $release['releaseName'] ?></h3>
+                            <h4><?php echo $release['releaseName'] ?></h4>
                             <p><?php echo $release['artistName'] ?></p>
                             <p><a href="<?php echo $release['purchaseURL'] ?>" class="btn btn-primary" role="button">Purchase</a></p>
                         </div>
                     </div>
-                </div>
         <?php endforeach; ?>
         <br>
     </div>

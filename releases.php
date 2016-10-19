@@ -28,27 +28,22 @@ $releases = get_all_releases();
 
 <h1>Releases</h1>
 
-<div id="releaseDisplay">
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Artist</th>
-            <th>Release</th>
-            <th>Year</th>
-        </tr>
-        <?php foreach ($releases as $release): ?>
-            <tr>
-                <td><?php echo $release['releaseID']; ?></td>
-                <td><a href="artists.php?artistName=<?php echo $release['artistName']; ?>">
-                    <?php echo $release['artistName']; ?></a></td>
-                <td><?php echo $release['releaseName']; ?></td>
-                <td><?php echo $release['releaseYear']; ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
+<div class="row" id="releaseDisplay">
+    <?php foreach ($releases as $release): ?>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <img src="<?php echo $release['imageURL']?>">
+            <div class="caption">
+                <h4><?php echo $release['releaseName'] ?></h4>
+                <p><?php echo $release['artistName'] ?></p>
+                <p><a href="<?php echo $release['purchaseURL'] ?>" class="btn btn-primary" role="button">Purchase</a></p>
+            </div>
+        </div>
+    <?php endforeach; ?>
+    </br>
 </div>
 
-<a href="add_release_form.php">Add Release</a>
+<!--    @TODO - this should be added on for only admins-->
+<h2><a href="add_release_form.php">Add Release</a></h2>
 
 </body>
 </html>

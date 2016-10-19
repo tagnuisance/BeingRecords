@@ -29,4 +29,29 @@
 
     <h1>Add Release</h1>
 
+    <div class="addForm">
+
+        <form action="add_release.php.php" method="POST">
+
+            <label>Release Name</label>
+            <input type="text"name="releaseName"><br>
+
+            <label>Artist Name</label>
+            <input type="text" name="artistName"><br>
+
+            <label>Release Year</label>
+            <input type="text" name="releaseYear"><br>
+
+            <label>Image URL</label>
+            <input type="text" name="imageURL"><br>
+
+            <label>Purchase URL</label>
+            <input type="text" name="purchaseURL"><br>
+
+            <input type="submit" value="Add Release"><br>
+
+        </form>
+
+    </div>
+
 </html>
