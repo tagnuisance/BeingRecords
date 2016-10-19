@@ -30,19 +30,27 @@ $releases = get_all_releases();
 
 <div class="row" id="releaseDisplay">
     <?php foreach ($releases as $release): ?>
-        <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="col-md-3 col-sm-4">
             <img src="<?php echo $release['imageURL']?>">
             <div class="caption">
                 <h4><?php echo $release['releaseName'] ?></h4>
                 <p><?php echo $release['artistName'] ?></p>
-                <p><a href="<?php echo $release['purchaseURL'] ?>" class="btn btn-primary" role="button">Purchase</a></p>
+                <div>
+                    <a href="<?php echo $release['purchaseURL'] ?>" class="btn btn-primary" role="button">Purchase</a>
+                        <form action="delete_release.php" method="post">
+                            <input type="submit" value="Delete"> </input>
+                            <input type="hidden" name="release_id" class="deleteButton" value="<?php echo $release['releaseID']; ?>">
+                        </form>
+                </div>
             </div>
         </div>
     <?php endforeach; ?>
     </br>
+    </br>
 </div>
 
 <!--    @TODO - this should be added on for only admins-->
+<p></p>
 <h2><a href="add_release_form.php">Add Release</a></h2>
 
 </body>

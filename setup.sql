@@ -23,3 +23,6 @@ INSERT INTO artists VALUES
 
 INSERT INTO releases VALUES
   (1, 'Immaculate Corpses', 'The Tape', '2015', 'https://theimmaculatecorpses.bandcamp.com/releases', 'images/immaculatecorpses/theTape.jpg');
+  (2, 'Boys Room', 'Big Bad Us', '2015', 'https://boysroom.bandcamp.com/releases', 'images/boysroom/bigbadus.jpg');
+  (3, 'Busy Beds', 'The Internet is the Real World', '2015', 'https://busybeds.bandcamp.com/album/the-internet-is-the-real-world-ep', 'images/busybeds/theinternetistherealworld.jpg');
+  (4, 'Disputed Zones', 'Disputed Zones (1-4)', '2016', 'https://disputedzones.bandcamp.com/releases', 'images/disputedzones/disputedzones.jpg');

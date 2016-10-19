@@ -1,7 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: n0195014
- * Date: 10/17/16
- * Time: 3:16 PM
- */
+
+require_once ('rest.php');
+
+//Get Input Values
+$artist_name = filter_input(INPUT_POST, 'artist_name');
+$release_name = filter_input(INPUT_POST, 'release_name');
+$release_year = filter_input(INPUT_POST, 'release_year');
+$purchase_url = filter_input(INPUT_POST, 'purchase_url');
+$image_url = filter_input(INPUT_POST, 'image_url');
+
+add_release($artist_name, $release_name, $release_year, $purchase_url, $image_url);
+
+include('releases.php');
+
+?>

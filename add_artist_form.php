@@ -32,7 +32,7 @@
             <label>Artist Bio</label>
             <input type="text" name="artistBio"><br>
 
-            <input type="submit" value="Add Artist"><br>
+            <input class="addButton" type="submit" value="Add Artist"><br>
 
         </form>
 

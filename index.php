@@ -31,7 +31,7 @@ $releases = get_all_releases();
 
     <div class="row" id="releaseDisplay">
         <?php foreach ($releases as $release): ?>
-            <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="col-md-3 col-sm-4">
                         <img src="<?php echo $release['imageURL']?>">
                         <div class="caption">
                             <h4><?php echo $release['releaseName'] ?></h4>

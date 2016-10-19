@@ -32,16 +32,24 @@ if (isset($_GET["artistName"])) {
 
 <h1>Artists</h1>
 
+<h2>Current Roster</h2>
+
 <div id="artistDisplay">
-    <table>
+    <table class="table">
         <tr>
             <th>Artist</th>
             <th>Bio</th>
+            <th></th>
         </tr>
         <?php foreach ($artists as $artist): ?>
             <tr>
                 <td><?php echo $artist['artistName']; ?></td>
                 <td><?php echo $artist['artistBio']; ?></td>
+                <form action="delete_artist.php" method="post">
+                    <input type="hidden" name="artist_id"
+                           value="<?php echo $artist['artistID']; ?>">
+                    <td><input type="submit" value="Delete"> </input></td>
+                </form>
             </tr>
         <?php endforeach; ?>
     </table>

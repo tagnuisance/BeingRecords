@@ -31,24 +31,24 @@
 
     <div class="addForm">
 
-        <form action="add_release.php.php" method="POST">
+        <form action="add_release.php" method="post">
 
             <label>Release Name</label>
-            <input type="text"name="releaseName"><br>
+            <input type="text"name="release_name"><br>
 
             <label>Artist Name</label>
-            <input type="text" name="artistName"><br>
+            <input type="text" name="artist_name"><br>
 
             <label>Release Year</label>
-            <input type="text" name="releaseYear"><br>
+            <input type="text" name="release_year"><br>
 
             <label>Image URL</label>
-            <input type="text" name="imageURL"><br>
+            <input type="text" name="image_url"><br>
 
             <label>Purchase URL</label>
-            <input type="text" name="purchaseURL"><br>
+            <input type="text" name="purchase_url"><br>
 
-            <input type="submit" value="Add Release"><br>
+            <input class="addButton" type="submit" value="Add Release"><br>
 
         </form>
 
