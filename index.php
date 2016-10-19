@@ -10,8 +10,8 @@ $releases = get_all_releases();
 <!DOCTYPE html>
 
 <head>
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
-<!--    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <title>Being Records - Established 2015</title>
 </head>
@@ -28,23 +28,21 @@ $releases = get_all_releases();
     </div>
 
     <h1>Being Records</h1>
-<!--    <h2>Established 2015</h2>-->
 
-    <div id="releaseDisplay">
-        <table>
-            <tr>
-                <th>Artist</th>
-                <th>Release</th>
-                <th>Year</th>
-            </tr>
+    <div class="row">
         <?php foreach ($releases as $release): ?>
-        <tr>
-            <td><?php echo $release['artistName']; ?></td>
-            <td><?php echo $release['releaseName']; ?></td>
-            <td><?php echo $release['releaseYear']; ?></td>
-        </tr>
+            <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="<?php echo $release['imageURL']?>">
+                        <div class="caption">
+                            <h3><?php echo $release['releaseName'] ?></h3>
+                            <p><?php echo $release['artistName'] ?></p>
+                            <p><a href="<?php echo $release['purchaseURL'] ?>" class="btn btn-primary" role="button">Purchase</a></p>
+                        </div>
+                    </div>
+                </div>
         <?php endforeach; ?>
-        </table>
+        <br>
     </div>
 
 </body>
