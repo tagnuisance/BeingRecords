@@ -1,9 +1,14 @@
 <?php
 if(isset($_POST['submit'])){
     $to = "tyler.agnew@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
+
+    //Using strip_tags here for secure coding practices...
+
+    $from = strip_tags($_POST['email']); // this is the sender's Email address
+    $first_name = strip_tags($_POST['first_name']);
+    $last_name = strip_tags($_POST['last_name']);
+
+
     $subject = "Form submission";
     $subject2 = "Copy of your form submission";
     $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];

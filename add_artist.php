@@ -1,8 +1,10 @@
 <?php
 
-// Input Items
-$artistName = filter_input(INPUT_POST, 'artistName');
+//Get Request Values - USING filter_input for secure transfer of request/response data.
+$artistName = (filter_input(INPUT_POST, 'artistName'));
 $artistBio = filter_input(INPUT_POST, 'artistBio');
+
+
 
 require_once ('database.php');
 

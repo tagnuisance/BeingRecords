@@ -36,7 +36,7 @@ $releases = get_all_releases();
                         <div class="caption">
                             <h4><?php echo $release['releaseName'] ?></h4>
                             <p><?php echo $release['artistName'] ?></p>
-                            <p><a href="<?php echo $release['purchaseURL'] ?>" class="btn btn-primary" role="button">Purchase</a></p>
+                            <p><a href="<?php echo $release['purchaseURL'] ?>" class="btn btn-primary deleteButton" role="button">Purchase</a></p>
                         </div>
                     </div>
         <?php endforeach; ?>

@@ -36,7 +36,7 @@ $releases = get_all_releases();
                 <h4><?php echo $release['releaseName'] ?></h4>
                 <p><?php echo $release['artistName'] ?></p>
                 <div>
-                    <a href="<?php echo $release['purchaseURL'] ?>" class="btn btn-primary" role="button">Purchase</a>
+                    <a href="<?php echo $release['purchaseURL'] ?>" class="btn btn-primary purchaseButton" role="button">Purchase</a>
                         <form action="delete_release.php" method="post">
                             <input type="submit" value="Delete"> </input>
                             <input type="hidden" name="release_id" class="deleteButton" value="<?php echo $release['releaseID']; ?>">

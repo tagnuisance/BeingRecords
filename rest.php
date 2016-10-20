@@ -3,11 +3,11 @@ require_once ('database.php');
 require_once ('functions.php');
 
 //Process Client Request
-
 function deliver_response($status, $status_message, $data)
 
 {
     header("HTTP/1.1 $status $status_message");
+    header("Content-Type: application/json");
     $response['status'] = $status;
     $response['status_message'] = $status_message;
     $response['data'] = $data;

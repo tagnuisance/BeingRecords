@@ -91,8 +91,21 @@ input[type=text], select {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+.addButton:hover {
     background-color: red;
+}
+
+.purchaseButton:hover {
+    background-color: red;
+}
+
+.btn-primary {
+    background-color: black;
+    border-color: black;
+}
+
+.btn {
+    background-color: black;
 }
 
 .deleteButton {
@@ -114,7 +127,6 @@ input[type=submit]:hover {
     user-select: none;
     background-image: none;
     border: 1px solid transparent;
-    border-radius: 4px;
 }
 
 .addForm {
