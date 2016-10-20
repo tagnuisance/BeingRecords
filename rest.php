@@ -2,7 +2,7 @@
 require_once ('database.php');
 require_once ('functions.php');
 
-//Process Client Request
+//Process Client Requests
 function deliver_response($status, $status_message, $data)
 
 {
