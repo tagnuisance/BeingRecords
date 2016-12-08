@@ -6,9 +6,10 @@
  * Time: 10:01 AM
  */
 
-$dsn = 'mysql:host=localhost;dbname=beingRecords';
-$username = 'root';
-$password = 'root';
+$dsn = 'mysql:host=beingrex.db.7344358.hostedresource.com;dbname=beingrex';
+$hostname = 'beingrex.db.7344358.hostedresource.com';
+$username = 'beingrex';
+$password = 'Howling1!';
 
 try {
     $db = new PDO($dsn, $username, $password);
@@ -17,4 +18,7 @@ try {
     include('database_error.php');
     exit();
 }
+
 ?>
+
+

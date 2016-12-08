@@ -35,23 +35,16 @@ $releases = get_all_releases();
             <div class="caption">
                 <h4><?php echo $release['releaseName'] ?></h4>
                 <p><?php echo $release['artistName'] ?></p>
-                <div>
-                    <a href="<?php echo $release['purchaseURL'] ?>" class="btn btn-primary purchaseButton" role="button">Purchase</a>
-                        <form action="delete_release.php" method="post">
-                            <input type="submit" value="Delete"> </input>
-                            <input type="hidden" name="release_id" class="deleteButton" value="<?php echo $release['releaseID']; ?>">
-                        </form>
-                </div>
+                <p><a href="<?php echo $release['purchaseURL'] ?>" class="btn btn-primary deleteButton" role="button">Purchase</a></p>
             </div>
         </div>
     <?php endforeach; ?>
-    </br>
-    </br>
+    <br>
 </div>
 
 <!--    @TODO - this should be added on for only admins-->
-<p></p>
-<h2><a href="add_release_form.php">Add Release</a></h2>
+<!--<p></p>-->
+<!--<h2><a href="add_release_form.php">Add Release</a></h2>-->
 
 </body>
 </html>

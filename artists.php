@@ -45,11 +45,12 @@ if (isset($_GET["artistName"])) {
             <tr>
                 <td><?php echo $artist['artistName']; ?></td>
                 <td><?php echo $artist['artistBio']; ?></td>
-                <form action="delete_artist.php" method="post">
-                    <input type="hidden" name="artist_id"
-                           value="<?php echo $artist['artistID']; ?>">
-                    <td><input type="submit" value="Delete"> </input></td>
-                </form>
+<!--                Admin Code for Deleting-->
+<!--                <form action="delete_artist.php" method="post">-->
+<!--                    <input type="hidden" name="artist_id"-->
+<!--                           value="--><?php //echo $artist['artistID']; ?><!--">-->
+<!--                    <td><input type="submit" value="Delete"> </input></td>-->
+<!--                </form>-->
             </tr>
         <?php endforeach; ?>
     </table>
@@ -57,7 +58,7 @@ if (isset($_GET["artistName"])) {
 </div>
 
 <!--@TODO - this should only be available for authenticated users-->
-<h2><a href="add_artist_form.php">Add Artist</a></h2>
+<!--<h2><a href="add_artist_form.php">Add Artist</a></h2>-->
 
 
 
